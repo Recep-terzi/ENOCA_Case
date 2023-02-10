@@ -3,11 +3,12 @@
 #main-section .news-first-line {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 #main-section .news-first-line .editors-pick .editors-pick-title,
 #main-section .news-first-line .trending .trending-title {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 20px;
   border-bottom: 1px solid #222;
   font-weight: 400;
@@ -99,7 +100,8 @@
 
 /* News Card */
 .news-card {
-  margin-top: 70px;
+  margin-top: 170px;
+  margin-bottom: 120px;
   background-color: #f8f9fa;
 }
 .news-card .card-left img {
@@ -135,4 +137,99 @@
 .news-card .card-right .card-news-time {
   color: gray;
   font-size: 14px;
+}
+
+/* News Categories */
+.news-category {
+  margin-top: 70px;
+}
+.business-category .business-card {
+  display: flex;
+  margin-bottom: 40px;
+}
+.business-category .business-category-title {
+  font-size: 20px;
+  border-bottom: 1px solid #222;
+  font-weight: 400;
+  width: fit-content;
+  margin-bottom: 60px;
+}
+.business-category .business-card .business-info .business-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.business-category .business-card .business-info .business-description {
+  color: gray;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.business-category .business-card .business-info .business-author {
+  line-height: 1.5;
+  font-size: 13px;
+}
+.business-category .business-card .business-info .business-time {
+  line-height: 1.5;
+  font-size: 13px;
+  color: gray;
+}
+.health-category .health-category-title {
+  font-size: 20px;
+  border-bottom: 1px solid #222;
+  font-weight: 400;
+  width: fit-content;
+  margin-bottom: 60px;
+}
+.health-category .health-card {
+  display: flex;
+  margin-bottom: 40px;
+}
+.health-category .health-card .health-info .health-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.health-category .health-card .health-info .health-description {
+  color: gray;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.health-category .health-card .health-info .health-author {
+  line-height: 1.5;
+  font-size: 13px;
+}
+.health-category .health-card .health-info .health-time {
+  line-height: 1.5;
+  font-size: 13px;
+  color: gray;
+}
+
+/* Recent */
+
+.recent-card {
+  display: flex;
+  margin-bottom: 30px;
+}
+.recent-card .recent-image img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+.recent-card .recent-info h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.recent-card .recent-info p:nth-child(2) {
+  color: gray;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.recent-card .recent-info p:nth-child(3) {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.recent-card .recent-info p:nth-child(4) {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: gray;
 }
