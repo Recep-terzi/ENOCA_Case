@@ -42,11 +42,17 @@
 #header-section .header-menu input:focus {
   outline: none;
 }
+/* #header-section .header-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 #header-section .header-menu svg:last-child {
   background-color: #000;
   color: #fff;
-  padding: 18px 22px;
+  padding: 16px 18px;
   border-radius: 22px;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -58,7 +64,9 @@
   background-color: #8bc34a;
   transition: 500ms ease;
 }
-#header-section .header-menu svg:hover {
+#header-section .header-menu svg:nth-child(1):hover,
+#header-section .header-menu svg:nth-child(2):hover,
+#header-section .header-menu svg:nth-child(3):hover {
   color: gray;
   transition: 500ms ease;
 }
@@ -67,8 +75,11 @@
 @import url("https://fonts.googleapis.com/css2?family=B612+Mono&display=swap");
 #navbar-section {
   display: flex;
-  margin-top: 50px;
+  margin-top: 40px;
+  width: 100%;
   gap: 40px;
+  background-color: #fff;
+  z-index: 10;
 }
 #navbar-section a {
   text-transform: uppercase;

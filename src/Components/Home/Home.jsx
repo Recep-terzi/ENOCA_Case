@@ -123,7 +123,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="menu">
-                <div className="number">01</div>
+                <div className="number">02</div>
                 <div className="info">
                   {data && (
                     <>
@@ -135,7 +135,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="menu">
-                <div className="number">01</div>
+                <div className="number">03</div>
                 <div className="info">
                   {data && (
                     <>
@@ -147,7 +147,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="menu">
-                <div className="number">01</div>
+                <div className="number">04</div>
                 <div className="info">
                   {data && (
                     <>
@@ -163,6 +163,24 @@ const Home = () => {
               </Link>
             </div>
           </div>
+        </div>
+        <div className="news-card row">
+          {data && (
+            <>
+              <div className="card-left col-md-6">
+                <img src={data[0].urlToImage} alt=" Card resimi" />
+              </div>
+              <div className="card-right col-md-6">
+                <div className="card-title">Editor's pick</div>
+                <div className="card-news-title">{data[0].title}</div>
+                <div className="card-news-description">
+                  {data[0].description}
+                </div>
+                <div className="card-news-author">{data[0].source.name}</div>
+                <div className="card-news-time">{data[0].publishedAt}</div>
+              </div>
+            </>
+          )}
         </div>
       </main>
     </div>
