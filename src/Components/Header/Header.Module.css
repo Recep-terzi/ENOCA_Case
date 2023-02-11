@@ -81,6 +81,14 @@
   z-index: 10;
   border-bottom: 1px solid #efefef;
 }
+.active-header {
+  color: #8bc34a;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+}
+.head-link {
+  color: #000;
+}
 #navbar-section a {
   text-transform: uppercase;
   text-decoration: none;
@@ -89,5 +97,4 @@
   font-size: 0.8rem;
   margin-right: 40px;
   letter-spacing: 0.05rem;
-  color: #000;
 }

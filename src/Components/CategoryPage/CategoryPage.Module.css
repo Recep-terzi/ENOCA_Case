@@ -1,0 +1,30 @@
+.editors-pick-title,
+.trending-title {
+  border-bottom: 1px solid #222;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.editors-pick p:first-child {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.page-number {
+  display: flex;
+  gap: 14px;
+  color: gray;
+}
+.page-number p {
+  cursor: pointer;
+}
+.page-number p:hover {
+  color: black;
+}
+.active {
+  font-weight: 700;
+  color: #000;
+}

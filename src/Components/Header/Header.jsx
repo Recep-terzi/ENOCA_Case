@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.Module.css";
 import { FaFacebookF } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { BsTwitter } from "react-icons/bs";
 import { ImSearch } from "react-icons/im";
 
 const Header = () => {
+  const [active, setActive] = useState();
   window.onscroll = function () {
     scrollFunction();
   };
@@ -22,6 +23,7 @@ const Header = () => {
       document.getElementById("navbar-section").style.position = "relative";
     }
   };
+  console.log(active);
   return (
     <>
       <div className="container">
@@ -40,14 +42,71 @@ const Header = () => {
       </div>
       <navbar id="navbar-section">
         <div className="container">
-          <Link to="/">Home</Link>
-          <Link to="/">Categories</Link>
-          <Link to="/">Politics</Link>
-          <Link to="/">Business</Link>
-          <Link to="/">Health</Link>
-          <Link to="/">Design</Link>
-          <Link to="/">Sport</Link>
-          <Link to="/">Contact</Link>
+          <Link
+            to="/"
+            onClick={() => setActive("Home")}
+            className={active === "Home" ? "active-header" : "head-link"}
+          >
+            Home
+          </Link>
+          <Link
+            to="/entertainment"
+            onClick={() => setActive("Entertainment")}
+            className={
+              active === "Entertainment" ? "active-header" : "head-link"
+            }
+          >
+            Entertainment
+          </Link>
+          <Link
+            to="/politics"
+            onClick={() => setActive("Politics")}
+            className={active === "Politics" ? "active-header" : "head-link"}
+          >
+            Politics
+          </Link>
+          <Link
+            to="/business"
+            onClick={() => setActive("Business")}
+            className={active === "Business" ? "active-header" : "head-link"}
+          >
+            Business
+          </Link>
+          <Link
+            to="/health"
+            onClick={() => setActive("Health")}
+            className={active === "Health" ? "active-header" : "head-link"}
+          >
+            Health
+          </Link>
+          <Link
+            to="/technology"
+            onClick={() => setActive("Technology")}
+            className={active === "Technology" ? "active-header" : "head-link"}
+          >
+            Technology
+          </Link>
+          <Link
+            to="/sports"
+            onClick={() => setActive("Sports")}
+            className={active === "Sports" ? "active-header" : "head-link"}
+          >
+            Sports
+          </Link>
+          <Link
+            to="/science"
+            onClick={() => setActive("Science")}
+            className={active === "Science" ? "active-header" : "head-link"}
+          >
+            Science
+          </Link>
+          <Link
+            to="/contact"
+            onClick={() => setActive("Contact")}
+            className={active === "Contact" ? "active-header" : "head-link"}
+          >
+            Contact
+          </Link>
         </div>
       </navbar>
     </>
