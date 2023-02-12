@@ -11,7 +11,7 @@ const CategoryPage = ({ category }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=tr&page=${page}&pageSize=10&category=${category}&apiKey=676f017549224f488970f1835f9db971`
+        `https://newsapi.org/v2/top-headlines?country=tr&page=${page}&pageSize=10&category=${category}&apiKey=9c2f265186724754bbe3ebb459165964`
       )
       .then((res) => setData(res.data.articles));
   }, [category, page]);
@@ -21,7 +21,7 @@ const CategoryPage = ({ category }) => {
       <div className="container">
         <div className="news-first-line row">
           <div className="editors-pick col-md-9">
-            <p>Categories</p>
+            <p>{category}</p>
             <div className="editors-pick-title">Recent News</div>
             {data && (
               <>

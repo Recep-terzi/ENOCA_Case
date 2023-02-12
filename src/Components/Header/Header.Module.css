@@ -98,3 +98,7 @@
   margin-right: 40px;
   letter-spacing: 0.05rem;
 }
+#navbar-section a:hover {
+  color: #000;
+  font-weight: 700;
+}

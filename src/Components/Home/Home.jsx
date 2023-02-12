@@ -12,21 +12,21 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&apiKey=676f017549224f488970f1835f9db971"
+        "https://newsapi.org/v2/top-headlines?country=tr&apiKey=9c2f265186724754bbe3ebb459165964"
       )
       .then((res) => setData(res.data.articles));
   }, []);
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=676f017549224f488970f1835f9db971"
+        "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=9c2f265186724754bbe3ebb459165964"
       )
       .then((res) => setBusiness(res.data.articles));
   }, []);
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&category=health&apiKey=676f017549224f488970f1835f9db971"
+        "https://newsapi.org/v2/top-headlines?country=tr&category=health&apiKey=9c2f265186724754bbe3ebb459165964"
       )
       .then((res) => setHealth(res.data.articles));
   }, []);
@@ -219,11 +219,7 @@ const Home = () => {
                 {business && (
                   <>
                     <div className="business-card-image col-md-6">
-                      <img
-                        src={business[0].urlToImage}
-                        alt=""
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <img src={business[0].urlToImage} alt="" />
                     </div>
                     <div className="business-info col-md-6">
                       <div className="business-title">{business[0].title}</div>
@@ -244,11 +240,7 @@ const Home = () => {
                 {business && (
                   <>
                     <div className="business-card-image col-md-6">
-                      <img
-                        src={business[1].urlToImage}
-                        alt=""
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <img src={business[1].urlToImage} alt="" />
                     </div>
                     <div className="business-info col-md-6">
                       <div className="business-title">{business[1].title}</div>
@@ -269,11 +261,7 @@ const Home = () => {
                 {business && (
                   <>
                     <div className="business-card-image col-md-6">
-                      <img
-                        src={business[2].urlToImage}
-                        alt=""
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <img src={business[2].urlToImage} alt="" />
                     </div>
                     <div className="business-info col-md-6">
                       <div className="business-title">{business[2].title}</div>
@@ -297,11 +285,7 @@ const Home = () => {
                 {health && (
                   <>
                     <div className="health-card-image col-md-6">
-                      <img
-                        src={health[0].urlToImage}
-                        alt=""
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <img src={health[0].urlToImage} alt="" />
                     </div>
                     <div className="health-info col-md-6">
                       <div className="health-title">{health[0].title}</div>
@@ -320,11 +304,7 @@ const Home = () => {
                 {health && (
                   <>
                     <div className="health-card-image col-md-6">
-                      <img
-                        src={health[1].urlToImage}
-                        alt=""
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <img src={health[1].urlToImage} alt="" />
                     </div>
                     <div className="health-info col-md-6">
                       <div className="health-title">{health[0].title}</div>
@@ -343,11 +323,7 @@ const Home = () => {
                 {health && (
                   <>
                     <div className="health-card-image col-md-6">
-                      <img
-                        src={health[2].urlToImage}
-                        alt=""
-                        style={{ width: "100%", height: "100%" }}
-                      />
+                      <img src={health[2].urlToImage} alt="" />
                     </div>
                     <div className="health-info col-md-6">
                       <div className="health-title">{health[0].title}</div>

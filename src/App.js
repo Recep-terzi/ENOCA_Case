@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import AllNews from "./Components/AllNews/AllNews";
 import CategoryPage from "./Components/CategoryPage/CategoryPage";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
@@ -33,8 +34,8 @@ function App() {
           element={<CategoryPage category="technology" />}
         ></Route>
         <Route
-          path="/entertainment"
-          element={<CategoryPage category="entertainment" />}
+          path="/allNews"
+          element={<AllNews category="entertainment" />}
         ></Route>
       </Routes>
     </>

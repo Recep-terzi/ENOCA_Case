@@ -7,7 +7,8 @@ import { BsTwitter } from "react-icons/bs";
 import { ImSearch } from "react-icons/im";
 
 const Header = () => {
-  const [active, setActive] = useState();
+  const [category, setCategory] = useState();
+
   window.onscroll = function () {
     scrollFunction();
   };
@@ -23,7 +24,6 @@ const Header = () => {
       document.getElementById("navbar-section").style.position = "relative";
     }
   };
-  console.log(active);
   return (
     <>
       <div className="container">
@@ -44,66 +44,69 @@ const Header = () => {
         <div className="container">
           <Link
             to="/"
-            onClick={() => setActive("Home")}
-            className={active === "Home" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Home")}
+            className={category === "Home" ? "active-header" : "head-link"}
           >
             Home
           </Link>
+
           <Link
-            to="/entertainment"
-            onClick={() => setActive("Entertainment")}
+            to="/allnews"
+            onClick={() => setCategory("Categories")}
             className={
-              active === "Entertainment" ? "active-header" : "head-link"
+              category === "Categories" ? "active-header" : "head-link"
             }
           >
-            Entertainment
+            Categories
           </Link>
           <Link
             to="/politics"
-            onClick={() => setActive("Politics")}
-            className={active === "Politics" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Politics")}
+            className={category === "Politics" ? "active-header" : "head-link"}
           >
             Politics
           </Link>
           <Link
             to="/business"
-            onClick={() => setActive("Business")}
-            className={active === "Business" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Business")}
+            className={category === "Business" ? "active-header" : "head-link"}
           >
             Business
           </Link>
           <Link
             to="/health"
-            onClick={() => setActive("Health")}
-            className={active === "Health" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Health")}
+            className={category === "Health" ? "active-header" : "head-link"}
           >
             Health
           </Link>
           <Link
             to="/technology"
-            onClick={() => setActive("Technology")}
-            className={active === "Technology" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Technology")}
+            className={
+              category === "Technology" ? "active-header" : "head-link"
+            }
           >
             Technology
           </Link>
           <Link
             to="/sports"
-            onClick={() => setActive("Sports")}
-            className={active === "Sports" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Sports")}
+            className={category === "Sports" ? "active-header" : "head-link"}
           >
             Sports
           </Link>
           <Link
             to="/science"
-            onClick={() => setActive("Science")}
-            className={active === "Science" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Science")}
+            className={category === "Science" ? "active-header" : "head-link"}
           >
             Science
           </Link>
           <Link
             to="/contact"
-            onClick={() => setActive("Contact")}
-            className={active === "Contact" ? "active-header" : "head-link"}
+            onClick={() => setCategory("Contact")}
+            className={category === "Contact" ? "active-header" : "head-link"}
           >
             Contact
           </Link>

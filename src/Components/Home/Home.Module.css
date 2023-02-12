@@ -147,6 +147,11 @@
   display: flex;
   margin-bottom: 40px;
 }
+.business-category .business-card .business-card-image img,
+.health-category .health-card .health-card-image img {
+  width: 250px;
+  height: 100%;
+}
 .business-category .business-category-title {
   font-size: 20px;
   border-bottom: 1px solid #222;
