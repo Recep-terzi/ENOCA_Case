@@ -143,14 +143,18 @@
 .news-category {
   margin-top: 70px;
 }
-.business-category .business-card {
+.business-category .business-card,
+.health-category .health-card {
   display: flex;
   margin-bottom: 40px;
+  width: 100%;
+  height: 200px;
 }
 .business-category .business-card .business-card-image img,
 .health-category .health-card .health-card-image img {
   width: 250px;
-  height: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .business-category .business-category-title {
   font-size: 20px;
