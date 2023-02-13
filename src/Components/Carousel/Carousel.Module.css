@@ -17,3 +17,8 @@
 .carousel-indicators .active {
   background-color: #8bc34a;
 }
+@media screen and (max-width: 768px) {
+  .carousel-indicators {
+    z-index: 0;
+  }
+}

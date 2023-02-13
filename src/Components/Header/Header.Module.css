@@ -11,7 +11,9 @@
   color: #000;
   cursor: pointer;
 }
-
+#header-section .header-logo svg {
+  display: none;
+}
 #header-section .header-menu {
   display: flex;
   align-items: center;
@@ -112,4 +114,82 @@
 #navbar-section a:hover {
   color: #000;
   font-weight: 700;
+}
+.mobile-navbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    padding: 20px;
+  }
+  #header-section {
+    display: block;
+  }
+  .header-menu .facebook,
+  .header-menu svg:nth-child(2),
+  .header-menu svg:nth-child(3) {
+    display: none;
+  }
+  #navbar-section {
+    display: none;
+  }
+  #header-section .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #header-section .header-logo svg {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .header-menu {
+    margin-top: 20px;
+  }
+  .mobile-navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    z-index: 1;
+    transition: left 250ms ease;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .open {
+    left: 30%;
+    position: fixed;
+    background-color: #fff;
+  }
+  .open svg {
+    font-size: 30px;
+    color: gray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+  }
+  .open .mobile-nav-link {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 40px;
+    gap: 30px;
+    font-size: 20px;
+  }
+  .open .mobile-nav-link a {
+    text-decoration: none;
+    color: #000;
+  }
+  .active-header {
+    color: #8bc34a;
+    font-weight: 700;
+    border-bottom: 0;
+  }
 }

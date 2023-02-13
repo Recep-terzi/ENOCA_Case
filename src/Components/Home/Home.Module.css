@@ -271,3 +271,27 @@
   object-fit: cover;
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+  .business-category .business-card,
+  .health-category .health-card {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .business-category .business-card .business-card-image img,
+  .health-category .health-card .health-card-image img {
+    width: 100%;
+  }
+  .business-category .business-card .business-info,
+  .health-category .health-card .health-info {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  .search-body {
+    grid-template-columns: auto;
+  }
+  .search-body .search-card {
+    margin-bottom: 20px;
+  }
+}

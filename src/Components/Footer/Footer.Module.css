@@ -44,3 +44,11 @@
 #footer-section button svg {
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  #footer-section {
+    padding: 0;
+  }
+  #footer-section .left {
+    margin-top: 10px;
+  }
+}
