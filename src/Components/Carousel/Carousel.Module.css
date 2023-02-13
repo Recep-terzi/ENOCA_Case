@@ -1,0 +1,18 @@
+.carousel-control-prev-icon {
+  background-image: url("../../assets/arrow-left-solid.svg");
+}
+.carousel-control-next-icon {
+  background-image: url("../../assets/arrow-right-solid.svg");
+}
+.carousel-inner {
+  margin-top: -100px;
+  margin-bottom: 0;
+  height: 600px;
+}
+
+.carousel-indicators li {
+  background-color: gray;
+}
+.carousel-indicators .active {
+  background-color: #8bc34a;
+}

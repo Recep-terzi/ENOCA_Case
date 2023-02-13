@@ -6,9 +6,12 @@ import { SlSocialInstagram } from "react-icons/sl";
 import { BsTwitter } from "react-icons/bs";
 import { ImSearch } from "react-icons/im";
 
-const Header = () => {
+const Header = ({ search, setSearch, setSearchValue }) => {
   const [category, setCategory] = useState();
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearchValue(search);
+  };
   window.onscroll = function () {
     scrollFunction();
   };
@@ -35,8 +38,15 @@ const Header = () => {
             <FaFacebookF />
             <BsTwitter />
             <SlSocialInstagram />
-            <input type="text" placeholder="Search..." />
-            <ImSearch />
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Search..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              <button type="submit">Gönder</button>
+            </form>
           </div>
         </header>
       </div>

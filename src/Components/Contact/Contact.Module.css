@@ -1,0 +1,90 @@
+/* Contact Section */
+
+#contact-section {
+  background-color: #f8f9fa !important;
+  height: 120vh;
+}
+#contact-section .contact-title {
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #222;
+  width: fit-content;
+  margin-top: 20px;
+}
+#contact-section .first-last-name,
+#contact-section .email-tel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 20px;
+}
+#contact-section .first-last-name .first-name,
+#contact-section .first-last-name .last-name,
+#contact-section .email-tel .email,
+#contact-section .email-tel .tel-number {
+  width: 100%;
+}
+
+#contact-section .first-last-name .first-name span,
+#contact-section .first-last-name .last-name span,
+#contact-section .email-tel .email span,
+#contact-section .email-tel .tel-number span,
+#contact-section .message span {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+#contact-section .first-last-name .first-name input,
+#contact-section .first-last-name .last-name input,
+#contact-section .email-tel .email input,
+#contact-section .email-tel .tel-number input,
+#contact-section .message textarea {
+  width: 100%;
+  margin-right: 10px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+#contact-section .first-last-name .first-name input:focus,
+#contact-section .first-last-name .last-name input:focus,
+#contact-section .email-tel .email input:focus,
+#contact-section .email-tel .tel-number input:focus {
+  outline: none;
+}
+
+#contact-section .message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+#contact-section .message textarea {
+  height: 250px;
+}
+#contact-section .message textarea:focus {
+  outline: none;
+}
+#contact-section .submit-button {
+  text-transform: uppercase;
+  border-radius: 30px;
+  background: #000;
+  padding: 1rem 3rem;
+  border-color: #000;
+  color: #fff;
+  margin-top: 1rem;
+  letter-spacing: 0.2ch;
+  border: none;
+  cursor: pointer;
+}
+#contact-section .submit-button:hover {
+  background-color: #8bc34a;
+  transition: 500ms ease;
+}
