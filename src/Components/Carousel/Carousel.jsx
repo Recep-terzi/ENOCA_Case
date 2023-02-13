@@ -6,7 +6,7 @@ const Carousel = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&apiKey=4c10e718f5b34bccba132be1c9233501"
+        "https://newsapi.org/v2/top-headlines?country=tr&apiKey=676f017549224f488970f1835f9db971"
       )
       .then((res) => setData(res.data.articles));
   }, []);

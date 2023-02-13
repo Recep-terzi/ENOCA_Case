@@ -17,21 +17,21 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&apiKey=4c10e718f5b34bccba132be1c9233501"
+        "https://newsapi.org/v2/top-headlines?country=tr&apiKey=676f017549224f488970f1835f9db971"
       )
       .then((res) => setData(res.data.articles));
   }, []);
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=4c10e718f5b34bccba132be1c9233501"
+        "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=676f017549224f488970f1835f9db971"
       )
       .then((res) => setBusiness(res.data.articles));
   }, []);
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=tr&category=health&apiKey=4c10e718f5b34bccba132be1c9233501"
+        "https://newsapi.org/v2/top-headlines?country=tr&category=health&apiKey=676f017549224f488970f1835f9db971"
       )
       .then((res) => setHealth(res.data.articles));
   }, []);
@@ -39,7 +39,7 @@ const Home = () => {
     axios
       .get(
         `
-    https://newsapi.org/v2/top-headlines?q=${searchValue}&country=tr&apiKey=4c10e718f5b34bccba132be1c9233501
+    https://newsapi.org/v2/top-headlines?q=${searchValue}&country=tr&apiKey=676f017549224f488970f1835f9db971
     `
       )
       .then((res) => setSearchData(res.data.articles));

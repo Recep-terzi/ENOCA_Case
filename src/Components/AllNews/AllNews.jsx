@@ -12,7 +12,7 @@ const AllNews = () => {
       .get(
         `https://newsapi.org/v2/top-headlines?country=tr&pageSize=10&category=${
           category ? category : ""
-        }&apiKey=4c10e718f5b34bccba132be1c9233501`
+        }&apiKey=676f017549224f488970f1835f9db971`
       )
       .then((res) => setData(res.data.articles));
   }, [category]);
