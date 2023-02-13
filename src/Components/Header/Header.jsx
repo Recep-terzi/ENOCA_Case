@@ -155,7 +155,7 @@ const Header = ({ search, setSearch, setSearchValue }) => {
           </Link>
         </div>
       </div>
-      <navbar id="navbar-section">
+      <nav id="navbar-section">
         <div className="container">
           <Link
             to="/"
@@ -233,7 +233,7 @@ const Header = ({ search, setSearch, setSearchValue }) => {
             About
           </Link>
         </div>
-      </navbar>
+      </nav>
     </>
   );
 };

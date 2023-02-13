@@ -16,7 +16,6 @@ const AllNews = () => {
       )
       .then((res) => setData(res.data.articles));
   }, [category]);
-  console.log(data);
   return (
     <>
       <Header />
@@ -95,8 +94,8 @@ const AllNews = () => {
           <div className="col-md-9 categories-right">
             {data && (
               <>
-                {data.map((news) => (
-                  <>
+                {data.map((news, index) => (
+                  <div key={index}>
                     <div className="new-card">
                       <div className="new-image">
                         <img src={news.urlToImage} alt="" />
@@ -110,7 +109,7 @@ const AllNews = () => {
                         <div className="new-time">{news.publishedAt}</div>
                       </div>
                     </div>
-                  </>
+                  </div>
                 ))}
               </>
             )}

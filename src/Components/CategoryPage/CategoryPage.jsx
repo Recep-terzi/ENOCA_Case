@@ -25,8 +25,8 @@ const CategoryPage = ({ category }) => {
             <div className="editors-pick-title">Recent News</div>
             {data && (
               <>
-                {data.map((categories) => (
-                  <>
+                {data.map((categories, index) => (
+                  <div key={index}>
                     <div className="recent-card row">
                       <div className="recent-info col-md-8">
                         <h2>{categories.title}</h2>
@@ -38,7 +38,7 @@ const CategoryPage = ({ category }) => {
                         <img src={categories.urlToImage} alt="" />
                       </div>
                     </div>
-                  </>
+                  </div>
                 ))}
               </>
             )}

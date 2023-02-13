@@ -44,7 +44,6 @@ const Home = () => {
       )
       .then((res) => setSearchData(res.data.articles));
   }, [searchValue]);
-  console.log(searchData);
   return (
     <div>
       <Header
@@ -56,8 +55,8 @@ const Home = () => {
         <>
           <div className="container">
             <div className="search-body ">
-              {searchData.map((data) => (
-                <div className="search-card ">
+              {searchData.map((data, index) => (
+                <div className="search-card" key={index}>
                   <div className="card-image">
                     <img src={data.urlToImage} alt="" />
                   </div>
