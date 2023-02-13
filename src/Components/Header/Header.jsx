@@ -45,7 +45,9 @@ const Header = ({ search, setSearch, setSearchValue }) => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <button type="submit">Gönder</button>
+              <button type="submit">
+                <ImSearch />
+              </button>
             </form>
           </div>
         </header>

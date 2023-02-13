@@ -59,6 +59,13 @@
   font-weight: bold;
   cursor: pointer;
 }
+#header-section .header-menu button {
+  border: none;
+  background-color: #fff;
+}
+#header-section .header-menu button:focus {
+  outline: none;
+}
 #header-section .header-logo a:hover {
   color: #8bc34a;
   transition: 500ms ease;
