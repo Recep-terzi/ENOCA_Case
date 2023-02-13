@@ -166,9 +166,9 @@
   #about-section .about .about-profile .social ul {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: flex-start;
   }
   .educational .university {
     display: flex;
