@@ -88,3 +88,24 @@
   background-color: #8bc34a;
   transition: 500ms ease;
 }
+@media screen and (max-width: 768px) {
+  #contact-section .first-last-name,
+  #contact-section .email-tel {
+    display: block;
+  }
+  #contact-section .first-last-name,
+  #contact-section .email-tel {
+    margin-top: 0;
+  }
+  .contact-title {
+    margin-bottom: 20px;
+  }
+  .first-name,
+  .last-name,
+  .email {
+    margin-bottom: 20px;
+  }
+  #contact-section {
+    height: 80vh;
+  }
+}

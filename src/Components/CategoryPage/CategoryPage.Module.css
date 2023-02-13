@@ -28,3 +28,11 @@
   font-weight: 700;
   color: #000;
 }
+@media screen and (max-width: 768px) {
+  .recent-card {
+    flex-direction: column-reverse;
+  }
+  .page-number {
+    margin-top: 10px;
+  }
+}

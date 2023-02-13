@@ -157,3 +157,48 @@
   img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  #about-section .about .about-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #about-section .about .about-profile .social ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+  .educational .university {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .educational .highschool {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .working .workings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #about-section .about .profile-description .achievements ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  #about-section .about .profile-description .certificates .certificates-image {
+    grid-template-columns: auto;
+  }
+}
