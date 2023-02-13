@@ -122,6 +122,13 @@ const Header = ({ search, setSearch, setSearchValue }) => {
           >
             Contact
           </Link>
+          <Link
+            to="/about"
+            onClick={() => setCategory("about")}
+            className={category === "about" ? "active-header" : "head-link"}
+          >
+            About
+          </Link>
         </div>
       </navbar>
     </>

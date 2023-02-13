@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+import About from "./Components/About/About";
 import AllNews from "./Components/AllNews/AllNews";
 import CategoryPage from "./Components/CategoryPage/CategoryPage";
 import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 
 function App() {
@@ -39,6 +39,7 @@ function App() {
           element={<AllNews category="entertainment" />}
         ></Route>
         <Route path="/contact" element={<Contact category="contact" />}></Route>
+        <Route path="/about" element={<About category="about" />}></Route>
       </Routes>
     </>
   );

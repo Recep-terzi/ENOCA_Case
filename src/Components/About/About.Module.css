@@ -1,0 +1,159 @@
+#about-section .about .about-profile {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+#about-section .about .about-profile img {
+  width: 250px;
+  height: 100%;
+  border-radius: 9999px;
+}
+#about-section .about .about-profile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 1.3;
+  gap: 10px;
+}
+#about-section .about .about-profile div p:nth-child(3) {
+  font-size: 14px;
+}
+#about-section .about .about-profile div p:first-child,
+#about-section .about .about-profile div p:nth-child(2) {
+  font-weight: 700;
+}
+#about-section .about .about-profile ul {
+  display: flex;
+  gap: 30px;
+}
+#about-section .about .about-profile ul li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+#about-section .about .about-profile ul li:hover,
+#about-section .about .about-profile ul li a:hover {
+  color: #8bc34a;
+  transition: 250ms ease-in-out;
+}
+#about-section .about .about-profile ul li a,
+#about-section .about .about-profile ul li:last-child {
+  color: #000;
+  text-decoration: underline;
+}
+#about-section .about .profile-description {
+  margin-top: 20px;
+}
+#about-section .about .profile-description .educational .title,
+#about-section .about .profile-description .working .title,
+#about-section .about .profile-description .achievements .title,
+#about-section .about .profile-description .certificates .title {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+  width: fit-content;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#about-section .about .profile-description .educational .university,
+#about-section .about .profile-description .educational .highschool {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#about-section
+  .about
+  .profile-description
+  .educational
+  .university
+  .university-logo
+  img,
+#about-section
+  .about
+  .profile-description
+  .educational
+  .highschool
+  .highschool-logo
+  img {
+  width: 150px;
+  height: 150px;
+}
+#about-section
+  .about
+  .profile-description
+  .educational
+  .university
+  .university-description,
+#about-section
+  .about
+  .profile-description
+  .educational
+  .highschool
+  .highschool-description {
+  text-align: center;
+  font-weight: bold;
+}
+#about-section .about .profile-description .working {
+  margin-top: 30px;
+}
+#about-section .about .profile-description .working .workings {
+  display: flex;
+  align-items: center;
+}
+#about-section .about .profile-description .working .workings {
+  background-color: #f8f9fa;
+}
+#about-section
+  .about
+  .profile-description
+  .working
+  .workings
+  .working-description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.3;
+}
+#about-section .about .profile-description .achievements {
+  margin-top: 30px;
+}
+#about-section .about .profile-description .achievements ul {
+  background-color: #f8f9fa;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 50px;
+  justify-content: space-between;
+}
+#about-section .about .profile-description .achievements ul li {
+  cursor: pointer;
+}
+#about-section .about .profile-description .achievements ul li:hover {
+  color: #8bc34a;
+  transition: 500ms ease-in-out;
+}
+#about-section .about .profile-description .certificates .certificates-image {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+#about-section .about .profile-description .certificates {
+  margin-top: 30px;
+}
+#about-section
+  .about
+  .profile-description
+  .certificates
+  .certificates-image
+  img {
+  width: 100%;
+}

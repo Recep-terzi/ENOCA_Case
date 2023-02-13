@@ -8,6 +8,7 @@
   margin-top: -100px;
   margin-bottom: 0;
   height: 600px;
+  z-index: -1;
 }
 
 .carousel-indicators li {
