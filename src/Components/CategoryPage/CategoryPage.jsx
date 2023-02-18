@@ -11,7 +11,7 @@ const CategoryPage = ({ category }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=tr&page=${page}&pageSize=10&category=${category}&apiKey=676f017549224f488970f1835f9db971`
+        `https://newsapi.org/v2/top-headlines?country=tr&page=${page}&pageSize=10&category=${category}&apiKey=520d805af228490b80350b752018160a`
       )
       .then((res) => setData(res.data.articles));
   }, [category, page]);
